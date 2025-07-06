@@ -1,5 +1,6 @@
 if __name__ == '__main__':
     n = int(input())
-    arr = map(int, input().split())
-    
-    print(max(arr)-1)
+    arr = list(map(int, input().split()))
+    highest = max(arr)
+    arr_without_highest = [x for x in arr if x!= highest]
+    print(max(arr_without_highest))
